@@ -1,20 +1,12 @@
 {
-  "name": "userguessnumber",
-  "Type": "module",
+  "name": "check-boolean",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "bin": "userGnum.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "prompt-sync": "^4.2.0"
-  },
-  "devDependencies": {
-    "@types/prompt-sync": "^4.2.3"
-  }
+  "license": "ISC"
 }
