@@ -1,15 +1,11 @@
-// *Question 120:* Use a for...of loop to iterate through an array of your favorite movies and log each one.
+// *Question 121:* Implement a for loop that counts from 1 to 10 but skips number 5 using the continue statement.
 
-// Defines an array of favorite movies
-const favoriteMovies: string[] = [
-    "AIR Wolf",
-    "War of the world",
-    "Perfect Stranger",
-    "Wise Man",
-    "Black Water",
-  ];
-  // Uses a for...of loop to iterate through favoriteMovies
-  for (const movie of favoriteMovies) {
-    console.log(movie); // Logs each movie name
+// This for loop counts from 1 to 10 but skips 5
+for (let i = 1; i <= 10; i++) {
+    
+    if (i === 5) {
+      continue; // Skips the rest of the loop for i = 5
+ }
+    console.log(i); // Logs numbers 1-4 and 6-10
   }
-  // Each movie in the array is logged to the console, one at a time.
+  // It demonstrates how to use 'continue' to skip a specific iteration.
