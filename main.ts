@@ -1,16 +1,8 @@
-// *Question 123:* Create a loop that iterates through a string and stops when it finds the first vowel.
+//   Checks the current hour and logs "Good Morning" if it's before 12 PM
 
-// This function iterates through a string and logs each character until it finds a vowel
-function logUntilVowel(str: string): void {
-    const vowels = "aeiouAEIOU";
-    for (const char of str) {
-      if (vowels.includes(char)) {
-        console.log(`First vowel found: ${char}`);
-        break; // Stops the loop at the first vowel found
-      }
-      console.log(char); // Logs each character until a vowel is encountered
-    }
-  }
-  
-  logUntilVowel("syzUygy"); // Logs 's', 'y', 'z', 'y', and then 'First vowel found: y'
-  // Demonstrates iterating through a string and stopping at the first vowel.
+let currentTime = new Date();
+if (currentTime.getHours() < 12) {
+    console.log("Good Morning"); // It's morning if before 12 PM
+}
+console.log(currentTime);
+// This simple check helps us greet users appropriately based on the time of day.
